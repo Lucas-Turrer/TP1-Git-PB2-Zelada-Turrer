@@ -1,0 +1,11 @@
+¿Qué sucedió cuando se intento hacer el segundo push?
+
+Al hacer el segundo push nos informo que habia cambios en el git.
+
+¿Qué acciones hay que tomar antes de realizar el push?
+
+Tenemos que realizar un git pull para actualizar el repositorio local al commit mas nuevo.
+
+¿Qué estrategia propondrían para evitar esta situación?
+
+Una de las estrategias para tener en cuenta es verificar si en el repositorio remoto hay commit nuevos.
