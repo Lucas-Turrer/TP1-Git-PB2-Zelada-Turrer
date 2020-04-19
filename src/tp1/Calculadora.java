@@ -1,4 +1,3 @@
-package tp1;
 
 import java.util.Scanner;
 public class Calculadora {
@@ -7,7 +6,7 @@ public class Calculadora {
  Integer a;
  Integer b;
  Integer opcion;
- Integer resultado;
+ Integer resultado = 0;
  do{
  System.out.println("Ingrese su operación /n 1 para sumar /n 2 para\restar /n 3 para multiplicar /n 4 para dividir");
  opcion = teclado.nextInt();
@@ -16,15 +15,21 @@ public class Calculadora {
  a = teclado.nextInt();
  System.out.println("Ingrese el segundo numero");
  b = teclado.nextInt();
- if(opcion.equals(1)){
- resultado = a + b;
- }else if(opcion.equals(2)){
- resultado = a - b;
- }else if(opcion.equals(3)){
- resultado = a * b;
- }else{
- resultado = a / b;
- }
+switch(opcion) {
+case 1:
+	resultado = a+b;
+	break;
+case 2:
+	resultado = a-b;
+	break;
+case 3:
+	resultado = a*b;
+	break;
+case 4:
+	resultado = a/b;
+	break;
+	
+}
  System.out.println("El resultado es " + resultado.toString());
  }
 }
